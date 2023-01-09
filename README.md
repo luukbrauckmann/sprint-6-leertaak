@@ -1,18 +1,24 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" height="32px"> De Voorhoeve
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## 📦 Inhoud
+1. Beschrijving
+2. Kenmerken
+3. Bronnen
+4. Licentie
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+## ℹ️ Beschrijving
+***
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+### Pagina's
+***
 
+## ✨ Kenmerken
+***
 
-## Licentie
+## 🌍 Bronnen
+***
+
+## 🪪 Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
