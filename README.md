@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" height="32px"> De Voorhoeve
+# <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" height="25px"> De Voorhoeve
 
 ## 📦 Inhoud
 1. Beschrijving
