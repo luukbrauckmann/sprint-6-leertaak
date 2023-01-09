@@ -4,7 +4,7 @@
 1. Beschrijving
 2. Kenmerken
 3. Bronnen
-4. Licentie
+4. Licenties
 
 ## ℹ️ Beschrijving
 ***
