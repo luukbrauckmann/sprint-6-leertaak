@@ -9,9 +9,6 @@
 ## ℹ️ Beschrijving
 ***
 
-### Pagina's
-***
-
 ## ✨ Kenmerken
 ***
 
