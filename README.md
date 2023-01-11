@@ -13,7 +13,7 @@
 ***
 
 ## 🌍 Bronnen
-***
+- [Docs imgIX](https://docs.imgix.com/)
 
 ## 🪪 Licenties
 
