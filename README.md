@@ -14,6 +14,7 @@
 
 ## 🌍 Bronnen
 - [Docs imgIX](https://docs.imgix.com/)
+- [Figma](https://www.figma.com/file/d8RftFmwUIJOaC10oYgITi/Lustrumpage?node-id=0%3A1)
 
 ## 🪪 Licenties
 
