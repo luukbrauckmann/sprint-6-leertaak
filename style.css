@@ -12,8 +12,7 @@
 :root {
 	--font-size: 16px;
 	--font-family: Inter, sans-serif;
-	--spacing-block: 1em;
-	--spacing-inline: .75em;
+	--spacing: .75em;
 	--border-radius: 5px;
 
 	--primary-color: #FFE400;
@@ -67,14 +66,121 @@ body > footer {
 
 body > main {
 	flex: 1 1 auto;
-	padding-block: var(--spacing-block);
-	padding-inline: var(--spacing-inline);
+	padding: var(--spacing);
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
 }
 
+/* Custom styles */
+
 body > header {
-	padding-block: var(--spacing-block);
-	padding-inline: var(--spacing-inline);
+	padding: var(--spacing);
 	border-bottom: 2px solid #EEEDBD;
+}
+
+main > header {
+	color: var(--accent-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: .75em;
+}
+
+main > header > h1 > small {
+	font-size: .6em;
+	font-weight: normal;
+}
+
+main > header > img {
+	height: 86.40px;
+}
+
+main > div {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+}
+
+.card {
+	position: relative;
+	background: white;
+	color: var(--accent-color);
+}
+
+.card > header > h2,
+.card > div {
+	padding: var(--spacing);
+}
+
+.card > header > h2 {
+	display: inline;
+	position: absolute;
+	transform: translateY(-100%);
+	background: white;
+	right: 0;
+	font-size: 1em;
+}
+
+.card:nth-child(even) > header > h2 {
+	right: unset;
+}
+
+#form {
+	position: relative;
+}
+
+#form > header {
+	background-color: var(--primary-color);
+	padding: var(--spacing);
+	color: #0000FF;
+	font-size: 1.5em;
+	padding-bottom: 12rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+	background: white;
+	padding: var(--spacing);
+	position: absolute;
+	transform: translateX(.5rem) translateY(-10.5rem);
+	width: 100%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+form > fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+}
+
+form > fieldset > label {
+	font-weight: 400;
+	color: var(--accent-color);
+}
+
+input[type='text'],
+textarea {
+	padding: var(--spacing);
+	border: none;
+	border-bottom: 2px solid var(--accent-color);
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+	background: #EDEDED;
+}
+
+button {
+	border: 1px solid var(--accent-color);
+	background: var(--accent-color);
+	padding: var(--spacing);
+	color: white;
+	font-weight: 700;
+	width: min-content;
+	border-radius: var(--border-radius);
 }
 
 /*  Media queries */
@@ -86,7 +192,9 @@ body > header {
 
 /* - Medium */
 @media (min-width: 768px) {
-
+	main > header > img {
+		height: 57.40px;
+	}
 }
 
 /* - Large */
@@ -97,81 +205,4 @@ body > header {
 /* - Extra Large */
 @media (min-width: 1200px) {
 
-}
-
-#form {
-	position: relative;
-}
-
-#form > header {
-	background-color: var(--primary-color);
-	padding-block: var(--spacing-block);
-	padding-inline: var(--spacing-inline);
-	color: #0000FF;
-	font-size: 1.5em;
-	padding-bottom: 12rem;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	gap: var(--spacing-inline);
-	background: white;
-	padding-block: var(--spacing-block);
-	padding-inline: var(--spacing-inline);
-	position: absolute;
-	transform: translateX(.5rem) translateY(-10.5rem);
-	width: 100%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-form > fieldset {
-	border: none;
-	display: flex;
-	flex-direction: column;
-	gap: var(--spacing-inline);
-}
-
-form > fieldset > label {
-	font-weight: 400;
-	color: var(--accent-color);
-}
-
-input[type='text'],
-textarea {
-	padding-block: var(--spacing-block);
-	padding-inline: var(--spacing-inline);
-	border: none;
-	border-bottom: 2px solid var(--accent-color);
-	border-top-left-radius: var(--border-radius);
-	border-top-right-radius: var(--border-radius);
-	background: #EDEDED;
-}
-
-button {
-	border: 1px solid var(--accent-color);
-	background: var(--accent-color);
-	padding: var(--spacing-inline) var(--spacing-block);
-	color: white;
-	font-weight: 700;
-	width: min-content;
-	border-radius: var(--border-radius);
-}
-
-.envelope {
-	height: 300px;
-	background: black;
-	border-radius: var(--border-radius);
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.12);
-	overflow: hidden;
-}
-
-.envelope .flap {
-	height: 100%;
-	background-image:
-		linear-gradient(45deg, white 50%, transparent 50%, transparent),
-		linear-gradient(-45deg, white 50%, transparent 50%, transparent);
-	background-size: 100%;
-	background-position: 50% 0, 0 0;
-	background-repeat: no-repeat;
 }

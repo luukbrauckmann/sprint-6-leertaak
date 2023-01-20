@@ -1,0 +1,359 @@
+{
+  "lustrum": {
+    "title": "Lustrum",
+    "subtitle": "De Voorhoede bestaat 10 jaar!",
+    "headerIllustration": {
+      "width": 800,
+      "height": 800,
+      "url": "https://www.datocms-assets.com/6524/1658236322-lustrum_logo_png.png",
+      "alt": null
+    },
+    "social": {
+      "description": "Op 1 oktober 2022 bestaat De Voorhoede 10 jaar! Ga mee op een trip down memorylane of vier het lustrum met ons via een van de events. ",
+      "title": "De Voorhoede bestaat 10 jaar ",
+      "twitterCard": null,
+      "image": {
+        "width": 1200,
+        "height": 630,
+        "url": "https://www.datocms-assets.com/6524/1653896048-de-voorhoede-open-graph.png",
+        "alt": null
+      }
+    },
+    "introTitle": "De toekomst van front-end",
+    "introBody": "Op 1 oktober 2022 bestaat De Voorhoede alweer 10 jaar: een lustrum! De afgelopen jaren is onze organisatie flink gegroeid: in kantoor, kennis en collega's. Er is veel veranderd. Niet alleen bij De Voorhoede, maar ook op front-end gebied. Natuurlijk hebben we ook heel veel plannen voor de komende jaren. Blik met ons terug op de eerste 10 jaar en kijk mee naar onze voorspellingen voor de toekomst.",
+    "introImage": {
+      "width": 2000,
+      "height": 1502,
+      "url": "https://www.datocms-assets.com/6524/1654255896-copy-of-voorhoede-borrel-2020-1.jpg",
+      "alt": null
+    },
+    "factsTitle": "Cijfers & facts: Voorhoede facts",
+    "factsList": [
+      {
+        "amount": 10,
+        "label": "jaar De Voorhoede"
+      },
+      {
+        "amount": 1,
+        "label": "CTO"
+      },
+      {
+        "amount": 2,
+        "label": "kantoren in Delft & Amsterdam"
+      },
+      {
+        "amount": 30,
+        "label": "collega's in dienst"
+      },
+      {
+        "amount": 7,
+        "label": "tech leads"
+      },
+      {
+        "amount": 85,
+        "label": "blogs geschreven"
+      },
+      {
+        "amount": 500,
+        "label": "projecten opgeleverd"
+      },
+      {
+        "amount": 33,
+        "label": "bomen geplant"
+      },
+      {
+        "amount": 19,
+        "label": "meetups georganiseerd"
+      },
+      {
+        "amount": 8,
+        "label": "masterclasses gegeven"
+      },
+      {
+        "amount": 136,
+        "label": "Code classes"
+      },
+      {
+        "amount": 87,
+        "label": "Code talks"
+      }
+    ],
+    "middleImage": {
+      "width": 4592,
+      "height": 3056,
+      "url": "https://www.datocms-assets.com/6524/1651831740-sam_8931.jpg",
+      "alt": null
+    },
+    "middleTitle": "Onze visie op frontend",
+    "middleBody": "Dit jaar bestaat De Voorhoede 10 jaar. In al die jaren is front-end gegroeid van een niche naar een onderdeel van alles. Wij vinden het erg leuk om koplopers te zijn en kijken nu naar wat de toekomst van front-end ons gaat brengen.\n\n[Lees alles over de toekomst van front-end](https://www.voorhoede.nl/en/blog/future-front-end-replaceable-inadequate-innovative)",
+    "quote": [
+      {
+        "title": "De grote droom van Jasper:",
+        "body": "<p><i><span style=\"font-weight: 400;\">&ldquo;Het klinkt weinig ambitieus, maar ik hoop dat we vooral dit kunnen blijven doen, wat we doen. Als hecht en gespecialiseerd team een impact maken binnen het vakgebied. En voorop lopen in de beste front-end oplossingen.&rdquo;</span></i></p>",
+        "linkLabel": "Lees het hele interview",
+        "linkUrl": "/nl/blog/10-jaar-interview-jasper/",
+        "person": {
+          "name": "Jasper",
+          "image": {
+            "width": 800,
+            "height": 1120,
+            "url": "https://www.datocms-assets.com/6524/1602158368-jasper27a4573-1.jpg",
+            "alt": null
+          }
+        }
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Oprichting De Voorhoede",
+        "description": "",
+        "date": "2012-10-01",
+        "image": null
+      },
+      {
+        "title": " Eerste Web App voor TV",
+        "description": "Ziggo SGUI met jQueryMX",
+        "date": "2013-07-01",
+        "image": {
+          "width": 600,
+          "height": 450,
+          "url": "https://www.datocms-assets.com/6524/1656341389-bl65gancyaiv9hu.jpeg",
+          "alt": null
+        }
+      },
+      {
+        "title": "Eerste Single Page App",
+        "description": "TBA CommTrac met Angular.JS",
+        "date": "2014-06-01",
+        "image": null
+      },
+      {
+        "title": "Begonnen met lesgeven op de Hogeschool van Amsterdam",
+        "description": "Minors gericht op webdevelopment",
+        "date": "2016-03-13",
+        "image": {
+          "width": 1200,
+          "height": 1200,
+          "url": "https://www.datocms-assets.com/6524/1656341338-cdgfayxw8aaepae.jpeg",
+          "alt": null
+        }
+      },
+      {
+        "title": "Onze eerste Meetup",
+        "description": "Onze eerste meetup georganiseerd: Front-end Forward in Amsterdam",
+        "date": "2016-08-17",
+        "image": null
+      },
+      {
+        "title": "Eerste code class",
+        "description": "Collega's leren elkaar nieuwe dingen",
+        "date": "2016-11-07",
+        "image": {
+          "width": 1200,
+          "height": 602,
+          "url": "https://www.datocms-assets.com/6524/1656341294-cw-akzzw8aas4vt.jpeg",
+          "alt": null
+        }
+      },
+      {
+        "title": "Eerste kantoor in Delft",
+        "description": "We namen intrek in de coworkingspace van Vakhuiswerk",
+        "date": "2019-01-01",
+        "image": null
+      },
+      {
+        "title": "Opening nieuw kantoor Delft",
+        "description": "Onze eigen plek aan de Koornmarkt",
+        "date": "2020-01-21",
+        "image": {
+          "width": 4640,
+          "height": 2610,
+          "url": "https://www.datocms-assets.com/6524/1653893865-copy-of-img_20210705_141212.jpg",
+          "alt": null
+        }
+      },
+      {
+        "title": "Opening nieuw kantoor Amsterdam",
+        "description": "Samen met Hike One hebben we nu een kantoor in de Houthavens",
+        "date": "2021-09-21",
+        "image": {
+          "width": 6000,
+          "height": 4000,
+          "url": "https://www.datocms-assets.com/6524/1653893718-copy-of-dsc05264.jpg",
+          "alt": null
+        }
+      }
+    ],
+    "teamGridTitle": "Een reis door de tijd",
+    "teamGrid": [
+      {
+        "image": {
+          "width": 5472,
+          "height": 3648,
+          "url": "https://www.datocms-assets.com/6524/1653893535-copy-of-img_2627-fefw_voorhoede.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 4000,
+          "height": 1936,
+          "url": "https://www.datocms-assets.com/6524/1652260840-img_20220117_114859.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 3264,
+          "height": 2448,
+          "url": "https://www.datocms-assets.com/6524/1653893584-copy-of-photo-03-03-2016-13-50-52.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 3803,
+          "height": 2536,
+          "url": "https://www.datocms-assets.com/6524/1626447055-img2346-nog-meer-final.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 1600,
+          "height": 1200,
+          "url": "https://www.datocms-assets.com/6524/1653893610-copy-of-2016-10-01-photo-00000006.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 2000,
+          "height": 1502,
+          "url": "https://www.datocms-assets.com/6524/1651831476-voorhoede-weekendje-2019-16.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 2000,
+          "height": 1502,
+          "url": "https://www.datocms-assets.com/6524/1651831472-voorhoede_weekend_2021_1060095-23.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 1600,
+          "height": 1200,
+          "url": "https://www.datocms-assets.com/6524/1653893842-copy-of-whatsapp-image-2018-09-30-at-12-42-27.jpeg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 4032,
+          "height": 3024,
+          "url": "https://www.datocms-assets.com/6524/1653893635-copy-of-foto-25-05-18-10-36-41.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 5568,
+          "height": 3712,
+          "url": "https://www.datocms-assets.com/6524/1651831466-dsc_1471.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 1200,
+          "height": 900,
+          "url": "https://www.datocms-assets.com/6524/1653893658-copy-of-cn_nz_fxeaazmdy.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 5568,
+          "height": 3712,
+          "url": "https://www.datocms-assets.com/6524/1653893699-copy-of-dsc_1295.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 2000,
+          "height": 1502,
+          "url": "https://www.datocms-assets.com/6524/1651831747-voorhoede_weekend_2021_1060094-22.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 1024,
+          "height": 768,
+          "url": "https://www.datocms-assets.com/6524/1653893757-copy-of-img_5003.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 4032,
+          "height": 3024,
+          "url": "https://www.datocms-assets.com/6524/1653893893-copy-of-img_7647.jpg",
+          "alt": null
+        }
+      },
+      {
+        "image": {
+          "width": 4592,
+          "height": 3056,
+          "url": "https://www.datocms-assets.com/6524/1654260572-copy-of-sam_9717.jpg",
+          "alt": "Test"
+        }
+      }
+    ]
+  },
+  "contactTitle": "Hiep hiep hoera!",
+  "contactBody": "Je felicitatie sturen via ons formulier, dat kan!",
+  "contactForm": {
+    "fields": [
+      {
+        "type": "input",
+        "label": "Mijn naam is",
+        "placeholder": "Naam"
+      },
+      {
+        "type": "input",
+        "label": "Mijn e-mailadres is",
+        "placeholder": "E-mailadres"
+      },
+      {
+        "type": "textarea",
+        "label": "Mijn bericht",
+        "placeholder": "felicitatie"
+      }
+    ],
+    "submitLabel": "Versturen"
+  },
+  "messagesTitle": "Felicitaties",
+  "messagesList": [
+    {
+      "date": "2023-01-09",
+      "body": "Gefeliciteerd met jullie 10 jaar! Op nog vele jaren!",
+      "author": "door Koop"
+    },
+    {
+      "date": "2022-12-20",
+      "body": "Vanaf het begin er bij geweest. Op naar de volgende 10",
+      "author": "door Declan"
+    },
+    {
+      "date": "2022-10-20",
+      "body": "Gefeliciteerd!",
+      "author": "door Jasper"
+    }
+  ]
+}
