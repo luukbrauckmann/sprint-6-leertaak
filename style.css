@@ -169,7 +169,7 @@ article > header > h2 {
 	background: var(--accent-color);
 	position: absolute;
 	left: .5rem;
-	transform: translateX(50%);
+	transform: translateX(-50%);
 }
 .timeline > div > ul > li {
 	padding: var(--spacing);
@@ -192,7 +192,7 @@ article > header > h2 {
 #timetravel-list {
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(1fr, 2);
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 }
 #timetravel-list > li > img {
@@ -308,8 +308,40 @@ button > svg {
 		flex-wrap: wrap;
 	}
 
+	.timeline > div > ul::before {
+		left: 50%;
+	}
+
 	#timetravel-list {
 		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.timeline > div > ul > li:nth-child(even) {
+		padding-left: calc(50% + 1em);
+	}
+
+	.timeline > div > ul > li:nth-child(odd) {
+		padding-right: calc(50% + 1em);
+		text-align: right;
+	}
+
+	.timeline > div > ul > li > article > header > h3::before {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	#form > header {
+		padding-bottom: 1em;
+		padding-right: 60%;
+	}
+
+	#form > header > h2 {
+		font-size: 2em;
+	}
+
+	#form > form {
+		width: 50%;
+		transform: translateX(90%) translateY(-25%);
 	}
 }
 
