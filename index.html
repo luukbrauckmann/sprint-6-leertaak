@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lustrum</title>
+	<link rel="icon" type="image/x-icon" href="https://www.voorhoede.nl/images/social/favicon.ico">
 
 	<link rel="stylesheet" href="style.css">
 
@@ -21,7 +22,10 @@
 		<header>
 			<h1>
 				<small>Lustrum</small>
-				<div>De voorhoede bestaat 10 jaar!</div>
+				<div>
+					<span>De voorhoede</span>
+					<span>bestaat 10 jaar!</span>
+				</div>
 			</h1>
 			<img src="https://www.datocms-assets.com/6524/1658236322-lustrum_logo_png.png" height="86">
 		</header>
@@ -29,7 +33,7 @@
 
 			<article class="card">
 				<header>
-					<img src="https://www.datocms-assets.com/6524/1654255896-copy-of-voorhoede-borrel-2020-1.jpg">
+					<img src="https://www.datocms-assets.com/6524/1654255896-copy-of-voorhoede-borrel-2020-1.jpg" loading="lazy">
 					<h2>De toekomst van front-end</h2>
 				</header>
 				<div>
@@ -37,13 +41,34 @@
 				</div>
 			</article>
 
+			<article>
+				<header>
+					<h2>Cijfers & facts: De Voohoede facts:</h2>
+				</header>
+				<div>
+					<ul id="numbers-and-facts-list"></ul>
+				</div>
+			</article>
+
 			<article class="card">
 				<header>
-					<img src="https://www.datocms-assets.com/6524/1651831740-sam_8931.jpg">
+					<img src="https://www.datocms-assets.com/6524/1651831740-sam_8931.jpg" loading="lazy">
 					<h2>Onze visie op front-end</h2>
 				</header>
 				<div>
 					<p>Dit jaar bestaat De Voorhoede 10 jaar. In al die jaren is front-end gegroeid van een niche naar een onderdeel van alles. Wij vinden het erg leuk om koplopers te zijn en kijken nu naar wat de toekomst van front-end ons gaat brengen.</p>
+					<button>Lees alles over de toekomst van front-end</button>
+				</div>
+			</article>
+
+			<article>
+				<header>
+					<img src="https://www.datocms-assets.com/6524/1602158368-jasper27a4573-1.jpg"loading="lazy" >
+					<h2>De grote droom van Jasper:</h2>
+				</header>
+				<div>
+					<p>“Het klinkt weinig ambitieus, maar ik hoop dat we vooral dit kunnen blijven doen, wat we doen. Als hecht en gespecialiseerd team een impact maken binnen het vakgebied. En voorop lopen in de beste front-end oplossingen.”</p>
+					<button>Lees het hele interview</button>
 				</div>
 			</article>
 
@@ -52,28 +77,16 @@
 					<h2>Tijdlijn</h2>
 				</header>
 				<div>
-					<ul>
-						<li>
-							<article>
-								<header>
-									<span>01 oktober 2012</span>
-									<h3>Oprichting De Voorhoede</h3>
-								</header>
-							</article>
-						</li>
-						<li>
-							<article>
-								<header>
-									<span>01 juli 2013</span>
-									<h3>Eerste Web app voor TV</h3>
-								</header>
-								<div>
-									<p>Ziggo SGUI met jQueryMX</p>
-									<img src="https://www.datocms-assets.com/6524/1656341389-bl65gancyaiv9hu.jpeg">
-								</div>
-							</article>
-						</li>
-					</ul>
+					<ul id="timeline-list"></ul>
+				</div>
+			</article>
+
+			<article>
+				<header>
+					<h2>Een reis door de tijd</h2>
+				</header>
+				<div>
+					<ul id="timetravel-list"></ul>
 				</div>
 			</article>
 
@@ -98,7 +111,10 @@
 					</fieldset>
 
 					<fieldset>
-						<button type="submit">Verzenden</button>
+						<button type="submit">
+							<span>Verzenden</span>
+							<svg class="fa-light fa-arrow-right"></svg>
+						</button>
 					</fieldset>
 				</form>
 

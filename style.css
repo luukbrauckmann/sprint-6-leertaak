@@ -92,6 +92,9 @@ main > header > h1 > small {
 	font-size: .6em;
 	font-weight: normal;
 }
+main > header > h1 > div > span {
+	display: block;
+}
 
 main > header > img {
 	height: 86.40px;
@@ -100,7 +103,17 @@ main > header > img {
 main > div {
 	display: flex;
 	flex-direction: column;
+	gap: calc(var(--spacing) * 10);
+}
+
+article {
+	display: flex;
+	flex-direction: column;
 	gap: var(--spacing);
+}
+
+article > header > h2 {
+	color: var(--accent-color);
 }
 
 .card {
@@ -125,6 +138,24 @@ main > div {
 
 .card:nth-child(even) > header > h2 {
 	right: unset;
+}
+
+#numbers-and-facts-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+}
+
+#numbers-and-facts-list > li {
+	padding: var(--spacing) calc(var(--spacing) * 1.5);
+	background: var(--primary-color);
+	color: var(--accent-color);
+	border-radius: 1.5em;
+}
+#numbers-and-facts-list > li > .amount {
+	/* font-size: 5em; */
+	font-weight: 700;
 }
 
 .timeline > div > ul {
@@ -158,8 +189,20 @@ main > div {
 	border-radius: 50%;
 }
 
+#timetravel-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(1fr, 2);
+	grid-template-rows: 1fr;
+}
+#timetravel-list > li > img {
+	height: 100%;
+	object-fit: fill;
+}
+
 #form {
 	position: relative;
+	padding-bottom: 14rem;
 }
 
 #form > header {
@@ -177,7 +220,7 @@ form {
 	background: white;
 	padding: var(--spacing);
 	position: absolute;
-	transform: translateX(.5rem) translateY(-10.5rem);
+	transform: translateX(.5rem) translateY(50%);
 	width: 100%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.12);
 }
@@ -212,6 +255,14 @@ button {
 	font-weight: 700;
 	width: min-content;
 	border-radius: var(--border-radius);
+	display: flex;
+	gap: .5em;
+	white-space: nowrap;
+}
+
+button > svg {
+	height: 1em;
+	width: 1em;
 }
 
 /*  Media queries */
@@ -223,14 +274,43 @@ button {
 
 /* - Medium */
 @media (min-width: 768px) {
-	main > header > img {
-		height: 57.40px;
-	}
 }
 
 /* - Large */
 @media (min-width: 992px) {
+	:root {
+		--font-size: 18px;
+	}
 
+	.card {
+		width: 75%;
+		padding-left: 25%;
+		margin-left: 21%;
+		padding-block: 2em;
+	}
+
+	.card > header > img {
+		position: absolute;
+		height: 100%;
+		padding-block: 2em;
+		top: 50%;
+		left: -50%;
+		transform: translateY(-50%) translateX(50%);
+	}
+	.card > header > h2 {
+		display: block;
+		position: unset;
+		transform: unset;
+	}
+
+	#numbers-and-facts-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#timetravel-list {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 /* - Extra Large */
