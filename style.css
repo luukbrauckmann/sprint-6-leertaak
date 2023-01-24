@@ -24,6 +24,7 @@
 	--warning-color: #F59E0B;
 	--danger-color: #EF4444;
 
+	--body-padding: 1em;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
@@ -66,17 +67,22 @@ body > footer {
 
 body > main {
 	flex: 1 1 auto;
-	padding: var(--spacing);
 
 	display: flex;
 	flex-direction: column;
 	gap: var(--spacing);
 }
 
+body > header,
+body > main,
+body > footer {
+	padding: var(--spacing) var(--body-padding);
+}
+
 /* Custom styles */
 
 body > header {
-	padding: var(--spacing);
+	padding-block: var(--spacing);
 	border-bottom: 2px solid #EEEDBD;
 }
 
@@ -122,18 +128,19 @@ article > header > h2 {
 	color: var(--accent-color);
 }
 
-.card > header > h2,
 .card > div {
 	padding: var(--spacing);
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 }
 
-.card > header > h2 {
+.card > div > h2 {
 	display: inline;
 	position: absolute;
 	transform: translateY(-100%);
 	background: white;
 	right: 0;
-	font-size: 1em;
 }
 
 .card:nth-child(even) > header > h2 {
@@ -158,6 +165,15 @@ article > header > h2 {
 	font-weight: 700;
 }
 
+article.quote > header > img {
+	width: 15em;
+	height: 15em;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: top;
+	margin-inline: auto;
+}
+
 .timeline > div > ul {
 	list-style: none;
 	position: relative;
@@ -175,6 +191,7 @@ article > header > h2 {
 	padding: var(--spacing);
 	padding-left: 2em;
 }
+
 .timeline > div > ul > li > article > header > h3 {
 	color: var(--accent-color);
 }
@@ -269,39 +286,45 @@ button > svg {
 
 /* - Small */
 @media (min-width: 576px) {
-
+	:root {
+		--body-padding: calc(100vw - var(--breakpoint-sm));
+	}
 }
 
 /* - Medium */
 @media (min-width: 768px) {
+	:root {
+		--body-padding: calc(100vw - var(--breakpoint-md));
+	}
 }
 
 /* - Large */
 @media (min-width: 992px) {
 	:root {
+		--body-padding: calc(100vw - var(--breakpoint-lg));
 		--font-size: 18px;
 	}
 
-	.card {
+	main > header > h1 {
+		font-size: 3em;
+	}
+
+	main > header > img {
+		height: 146.4px;
+	}
+
+	/* .card {
 		width: 75%;
 		padding-left: 25%;
 		margin-left: 21%;
 		padding-block: 2em;
 	}
 
-	.card > header > img {
-		position: absolute;
-		height: 100%;
-		padding-block: 2em;
-		top: 50%;
-		left: -50%;
-		transform: translateY(-50%) translateX(50%);
-	}
 	.card > header > h2 {
 		display: block;
 		position: unset;
 		transform: unset;
-	}
+	} */
 
 	#numbers-and-facts-list {
 		flex-direction: row;
@@ -347,5 +370,7 @@ button > svg {
 
 /* - Extra Large */
 @media (min-width: 1200px) {
-
+	:root {
+		--body-padding: calc(100vw - var(--breakpoint-xl));
+	}
 }

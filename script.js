@@ -24,6 +24,8 @@ buildTimeline = () => {
 	const { timeline } = cms.lustrum
 	const list = document.getElementById('timeline-list')
 	for(let item of timeline) {
+		let imgHtml = ''
+		if (item.image) imgHtml = `<img src="${ item.image.url }" loading="lazy">`
 		const html = `
 			<li>
 				<article>
@@ -33,6 +35,7 @@ buildTimeline = () => {
 					</header>
 					<div>
 						<p>${ item.description }</p>
+						${ imgHtml }
 					</div>
 				</article>
 			</li>
