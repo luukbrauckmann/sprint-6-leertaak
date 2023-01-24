@@ -10,7 +10,7 @@
 ***
 
 ## ✨ Kenmerken
-***
+De website is gebouwd met HTML, CSS & JavaScript.
 
 ## 🌍 Bronnen
 - [Docs imgIX](https://docs.imgix.com/)
