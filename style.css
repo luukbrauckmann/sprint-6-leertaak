@@ -70,7 +70,7 @@ body > main {
 
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--spacing) * 10);
+	gap: calc(var(--spacing) * 5);
 }
 
 body > header,
@@ -87,6 +87,7 @@ body > header {
 }
 
 main > header {
+	padding-top: calc(var(--spacing) * 3);
 	color: var(--accent-color);
 	display: flex;
 	justify-content: space-between;
@@ -115,42 +116,50 @@ main > div {
 article {
 	display: flex;
 	flex-direction: column;
+	gap: 1em;
 }
 
 article > header > h2 {
 	color: var(--accent-color);
+	text-align: center;
 }
 
 .card {
 	display: flex;
-	flex-direction: row;
-  background: white;
-  margin-left: 25%;
-}
-
-.card > img,
-.card > div {
-  width: 75%;
-  padding: 2em;
-}
-
-.card > img {
-  padding: 2em;
-  transform: translateX(-50%);
-  object-fit: cover;
+	flex-direction: column;
+	background: white;
+	color: var(--accent-color);
+	font-size: .75em;
 }
 
 .card > div {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  margin-left: calc(-25% - 7em);
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	position: relative;
+}
+
+.card > div > h2 {
+	font-weight: 700;
+	padding: 1rem 2rem;
+	background: white;
+	display: inline;
+	position: absolute;
+	top: 0;
+	right: calc(0px - 1px);
+	transform: translateY(calc(-100% + 1px));
+}
+
+.card.reverse > div > h2 {
+	right: unset;
+	left: calc(0px - 1px);
 }
 
 #numbers-and-facts-list {
 	list-style: none;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	gap: var(--spacing);
 }
 
@@ -165,7 +174,7 @@ article > header > h2 {
 	font-weight: 700;
 }
 
-article.quote > header > img {
+article.quote > img {
 	width: 15em;
 	height: 15em;
 	border-radius: 50%;
@@ -206,6 +215,12 @@ article.quote > header > img {
 	border-radius: 50%;
 }
 
+.timeline > div > ul > li > article > div {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+
 #timetravel-list {
 	list-style: none;
 	display: grid;
@@ -219,7 +234,7 @@ article.quote > header > img {
 
 #form {
 	position: relative;
-	padding-bottom: 14rem;
+	padding-bottom: 10rem;
 }
 
 #form > header {
@@ -230,6 +245,10 @@ article.quote > header > img {
 	padding-bottom: 12rem;
 }
 
+#form > header > h2 {
+	text-align: left;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -237,7 +256,7 @@ form {
 	background: white;
 	padding: var(--spacing);
 	position: absolute;
-	transform: translateX(.5rem) translateY(50%);
+	transform: translateX(.5rem) translateY(40%);
 	width: 100%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.12);
 }
@@ -252,6 +271,7 @@ form > fieldset {
 form > fieldset > label {
 	font-weight: 400;
 	color: var(--accent-color);
+	width: 100%;
 }
 
 input[type='text'],
@@ -262,6 +282,7 @@ textarea {
 	border-top-left-radius: var(--border-radius);
 	border-top-right-radius: var(--border-radius);
 	background: #EDEDED;
+	width: 100%;
 }
 
 button {
@@ -270,16 +291,48 @@ button {
 	padding: var(--spacing);
 	color: white;
 	font-weight: 700;
-	width: min-content;
+	width: fit-content;
 	border-radius: var(--border-radius);
 	display: flex;
 	gap: .5em;
 	white-space: nowrap;
+	cursor: pointer;
 }
 
 button > svg {
 	height: 1em;
 	width: 1em;
+}
+
+#congratulations-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+#congratulations-list > li {
+	display: flex;
+}
+
+#congratulations-list > li > div:nth-child(1) {
+	display: none;
+}
+#congratulations-list > li > div:nth-child(2) {
+	border-left: 1px solid var(--accent-color);
+	padding-left: 1em;
+}
+#congratulations-list > li > div:nth-child(2) > p {
+	display: flex;
+	flex-direction: column;
+	gap: .5em;
+}
+#congratulations-list > li > div:nth-child(2) > p > span:nth-child(1) {
+	display: block;
+	color: var(--accent-color);
+}
+#congratulations-list > li > div:nth-child(2) > p > span:nth-child(2) {
+	font-size: .75em;
 }
 
 /*  Media queries */
@@ -296,39 +349,52 @@ button > svg {
 	:root {
 		--body-padding: calc(100vw - var(--breakpoint-md));
 	}
-}
 
-/* - Large */
-@media (min-width: 992px) {
-	:root {
-		--body-padding: calc(100vw - var(--breakpoint-lg));
-		--font-size: 18px;
-	}
-
-	main > header > h1 {
-		font-size: 3em;
-	}
-
-	main > header > img {
-		height: 146.4px;
-	}
-
-	/* .card {
-		width: 75%;
-		padding-left: 25%;
-		margin-left: 21%;
-		padding-block: 2em;
-	}
-
-	.card > header > h2 {
-		display: block;
-		position: unset;
-		transform: unset;
-	} */
-
-	#numbers-and-facts-list {
+	.card {
+		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
+		margin-left: 25%;
+	}
+
+	.card.reverse {
+		flex-direction: row-reverse;
+		margin-left: 0;
+		margin-right: 25%;
+	}
+
+	.card > img,
+	.card > div {
+		width: 75%;
+		padding: 2em;
+	}
+
+	.card > img {
+		padding: 2em;
+		transform: translateX(-50%);
+		object-fit: cover;
+	}
+
+	.card.reverse > img {
+		transform: translateX(50%);
+	}
+
+	.card > div {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		margin-left: calc(-25% - 7em);
+	}
+
+	.card.reverse > div {
+		margin-left: 0;
+		margin-right: calc(-25% - 7em);
+	}
+
+	.card > div > h2 {
+		position: initial;
+		transform: translateY(0);
+		display: block;
+		padding: 0;
 	}
 
 	.timeline > div > ul::before {
@@ -353,6 +419,25 @@ button > svg {
 		transform: translateX(-50%);
 	}
 
+	#form {
+		padding-bottom: 0;
+	}
+
+	#form > form {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#form > form > fieldset:nth-child(1),
+	#form > form > fieldset:nth-child(2) {
+		width: calc(50% - .5em);
+	}
+
+	#form > form > fieldset:nth-child(3),
+	#form > form > fieldset:nth-child(4) {
+		width: 100%;
+	}
+
 	#form > header {
 		padding-bottom: 1em;
 		padding-right: 60%;
@@ -364,7 +449,36 @@ button > svg {
 
 	#form > form {
 		width: 50%;
-		transform: translateX(90%) translateY(-25%);
+		transform: translateX(90%) translateY(-10%);
+	}
+
+	#congratulations-list > li > div:nth-child(1) {
+		display: block;
+		padding-right: 1em;
+	}
+
+}
+
+/* - Large */
+@media (min-width: 992px) {
+	:root {
+		--body-padding: calc(100vw - var(--breakpoint-lg));
+	}
+
+	main > header {
+		padding-top: calc(var(--spacing) * 3);
+	}
+
+	main > header > h1 {
+		font-size: 3em;
+	}
+
+	main > header > img {
+		height: 146.4px;
+	}
+
+	article.quote {
+		flex-direction: row;
 	}
 }
 

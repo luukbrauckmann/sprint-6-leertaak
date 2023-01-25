@@ -58,11 +58,34 @@ buildTimetravel = () => {
 	}
 }
 
+buildCongratulationsList = () => {
+	if (!cms) return
+	const { messagesList } = cms
+	const list = document.getElementById('congratulations-list')
+	for(let item of messagesList) {
+		const html = `
+			<li>
+				<div>
+					<p>${ item.date }</p>
+				</div>
+				<div>
+					<p>
+						<span>"${ item.body }"</span>
+						<span>${ item.author }</span>
+					</p>
+				</div>
+			</li>
+		`
+		list.insertAdjacentHTML('beforeend', html)
+	}
+}
+
 init = async () => {
 	await getCMSFile()
 	buildNumbersAndFacts()
 	buildTimeline()
 	buildTimetravel()
+	buildCongratulationsList()
 }
 
 addEventListener('submit', (event) => event.preventDefault())
