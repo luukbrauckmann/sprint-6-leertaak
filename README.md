@@ -1,22 +1,42 @@
-# <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" height="32px"> De Voorhoeve
+<h1>
+  <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" style="height: 1em;">
+  <span>De Voorhoede Lustrum Component</span>
+</h1>
 
-## 📦 Inhoud
-1. Beschrijving
-2. Kenmerken
-3. Bronnen
-4. Licenties
 
-## ℹ️ Beschrijving
+<h2 id="inhoud">📦 Inhoud</h2>
+
+<ol>
+  <li>
+    <a href="#beschrijving">Beschrijving</a>
+  </li>
+  <li>
+    <a href="#kenmerken">Kenmerken</a>
+  </li>
+  <li>
+    <a href="#bronnen">Bronnen</a>
+  </li>
+  <li>
+    <a href="#licenties">Licenties</a>
+  </li>
+</ol>
+
+
+<h2 id="beschrijving">ℹ️ Beschrijving</h2>
+
 ***
 
-## ✨ Kenmerken
-***
+<h2 id="kenmerken">✨ Kenmerken</h2>
 
-## 🌍 Bronnen
+De website is gebouwd met HTML, CSS & JavaScript.
+
+
+<h2 id="bronnen">🌍 Bronnen</h2>
+
 - [Docs imgIX](https://docs.imgix.com/)
 - [Figma](https://www.figma.com/file/d8RftFmwUIJOaC10oYgITi/Lustrumpage?node-id=0%3A1)
 
-## 🪪 Licenties
+<h2 id="licenties">🪪 Licenties</h2>
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
