@@ -1,6 +1,6 @@
 <h1>
   <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" style="height: 1em;">
-  <span>De Voorhoede</span>
+  <span>De Voorhoede Lustrum Component</span>
 </h1>
 
 
