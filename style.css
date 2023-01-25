@@ -70,7 +70,7 @@ body > main {
 
 	display: flex;
 	flex-direction: column;
-	gap: var(--spacing);
+	gap: calc(var(--spacing) * 10);
 }
 
 body > header,
@@ -115,7 +115,6 @@ main > div {
 article {
 	display: flex;
 	flex-direction: column;
-	gap: var(--spacing);
 }
 
 article > header > h2 {
@@ -123,28 +122,29 @@ article > header > h2 {
 }
 
 .card {
-	position: relative;
-	background: white;
-	color: var(--accent-color);
+	display: flex;
+	flex-direction: row;
+  background: white;
+  margin-left: 25%;
+}
+
+.card > img,
+.card > div {
+  width: 75%;
+  padding: 2em;
+}
+
+.card > img {
+  padding: 2em;
+  transform: translateX(-50%);
+  object-fit: cover;
 }
 
 .card > div {
-	padding: var(--spacing);
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-}
-
-.card > div > h2 {
-	display: inline;
-	position: absolute;
-	transform: translateY(-100%);
-	background: white;
-	right: 0;
-}
-
-.card:nth-child(even) > header > h2 {
-	right: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-left: calc(-25% - 7em);
 }
 
 #numbers-and-facts-list {
