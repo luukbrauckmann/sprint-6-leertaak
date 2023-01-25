@@ -1,13 +1,7 @@
-
-
 <h1>
-  <div>
-    <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" style="height: 1em;">
-    <span>De Voorhoede</span>
-  </div>
+  <img src="https://user-images.githubusercontent.com/47314813/211351312-ca3f7823-2552-498c-987c-9747ebee92c0.png" style="height: 1em;">
+  <span>De Voorhoede</span>
 </h1>
-
-<span style="font-size: 3rem;">Lustrum</span>
 
 
 <h2 id="inhoud">📦 Inhoud</h2>
