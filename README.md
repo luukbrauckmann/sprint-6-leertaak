@@ -3,6 +3,9 @@
   <span>De Voorhoede Lustrum Component</span>
 </h1>
 
+![image](https://user-images.githubusercontent.com/47314813/214585578-2d7a4945-b81e-4f42-bb43-23d1a0976baa.png)
+
+
 
 <h2 id="inhoud">📦 Inhoud</h2>
 
