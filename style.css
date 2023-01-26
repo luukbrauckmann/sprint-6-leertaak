@@ -105,7 +105,7 @@ main > header > h1 > div > span {
 }
 
 main > header > img {
-	height: 86.40px;
+	height: 7em;
 }
 
 main > div {
@@ -497,7 +497,7 @@ button > svg {
 	}
 
 	main > header > img {
-		height: 146.4px;
+		height: 10em;
 	}
 
 	article.quote {
