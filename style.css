@@ -10,7 +10,7 @@
 
 /* Custom properties */
 :root {
-	--font-size: 16px;
+	--font-size: 1em;
 	--font-family: Inter, sans-serif;
 	--spacing: .75em;
 	--border-radius: 5px;
@@ -24,7 +24,8 @@
 	--warning-color: #F59E0B;
 	--danger-color: #EF4444;
 
-	--body-padding: 1em;
+	--body-padding: calc(((100vw - var(--max-screen-width)) / 2) + var(--spacing));
+	--max-screen-width: 100%;
 	--breakpoint-sm: 576px;
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
@@ -161,6 +162,7 @@ article > header > h2 {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--spacing);
+	font-size: .75em;
 }
 
 #numbers-and-facts-list > li {
@@ -181,6 +183,18 @@ article.quote > img {
 	object-fit: cover;
 	object-position: top;
 	margin-inline: auto;
+	margin-bottom: auto;
+	flex: 0 0 15em;
+}
+
+article.quote > div {
+	display: flex;
+	flex-direction: column;
+	gap: .75em;
+}
+
+article.quote > div > h2 {
+	color: var(--accent-color);
 }
 
 .timeline > div > ul {
@@ -241,7 +255,7 @@ article.quote > img {
 	background-color: var(--primary-color);
 	padding: var(--spacing);
 	color: #0000FF;
-	font-size: 1.5em;
+	font-size: 1em;
 	padding-bottom: 12rem;
 }
 
@@ -270,6 +284,7 @@ form > fieldset {
 
 form > fieldset > label {
 	font-weight: 400;
+	font-size: .5em;
 	color: var(--accent-color);
 	width: 100%;
 }
@@ -283,6 +298,10 @@ textarea {
 	border-top-right-radius: var(--border-radius);
 	background: #EDEDED;
 	width: 100%;
+}
+
+*::placeholder {
+	font-family: var(--font-family);
 }
 
 button {
@@ -340,14 +359,15 @@ button > svg {
 /* - Small */
 @media (min-width: 576px) {
 	:root {
-		--body-padding: calc(100vw - var(--breakpoint-sm));
+		--font-size: 1.2em;
+		--max-screen-width: var(--breakpoint-sm);
 	}
 }
 
 /* - Medium */
 @media (min-width: 768px) {
 	:root {
-		--body-padding: calc(100vw - var(--breakpoint-md));
+		--max-screen-width: var(--breakpoint-md);
 	}
 
 	.card {
@@ -449,12 +469,15 @@ button > svg {
 
 	#form > form {
 		width: 50%;
-		transform: translateX(90%) translateY(-10%);
+		top: 50%;
+		transform: translateX(90%) translateY(-50%);
 	}
 
 	#congratulations-list > li > div:nth-child(1) {
 		display: block;
 		padding-right: 1em;
+		flex: 0 0 10em;
+		white-space: nowrap;
 	}
 
 }
@@ -462,7 +485,7 @@ button > svg {
 /* - Large */
 @media (min-width: 992px) {
 	:root {
-		--body-padding: calc(100vw - var(--breakpoint-lg));
+		--max-screen-width: var(--breakpoint-lg);
 	}
 
 	main > header {
@@ -480,11 +503,17 @@ button > svg {
 	article.quote {
 		flex-direction: row;
 	}
+	article.quote > img {
+		height: 8em;
+		width: 8em;
+		flex: 0 0 8em;
+	}
 }
 
 /* - Extra Large */
 @media (min-width: 1200px) {
 	:root {
-		--body-padding: calc(100vw - var(--breakpoint-xl));
+		--font-size: 1.5em;
+		--max-screen-width: var(--breakpoint-xl);
 	}
 }
